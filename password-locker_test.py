@@ -45,6 +45,20 @@ class TestCredentials(unittest.TestCase):
         '''
         self.new_credential = Credentials('Gmail', 'Ian', '12345')
 
+    def tearDown(self) -> None:
+        '''
+        tearDown method that does clean up after each test case has run.
+        '''
+        User.credentials_list = []
+
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly.
+        '''
+        self.assertEqual(self.new_credential.account, 'Gmail')
+        self.assertEqual(self.new_credential.user_name, 'Ian')
+        self.assertEqual(self.new_credential.user_password, '12345')
+
 
 if __name__ == '__main__':
     unittest.main()
