@@ -49,7 +49,7 @@ class TestCredentials(unittest.TestCase):
         '''
         tearDown method that does clean up after each test case has run.
         '''
-        User.credentials_list = []
+        Credentials.credentials_list = []
 
     def test_init(self):
         '''
