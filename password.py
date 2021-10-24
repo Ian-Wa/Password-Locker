@@ -1,4 +1,4 @@
-class user:
+class User:
     '''
     Class that generates a new user instance
     '''
