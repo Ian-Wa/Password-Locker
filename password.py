@@ -19,12 +19,30 @@ class User:
         '''
         User.user_list.append(self)
 
+    @classmethod
+    def display_user(cls):
+        return cls.user_list
+
+    def delete_user(self):
+        User.user_list.remove(self)
+
 
 class Credentials():
     '''
     Class that generates new credentials instances.
     '''
     credentials_list = []
+
+    @classmethod
+    def verify_user(cls,username, password):
+        """
+        method to verify whether the user is in our user_list or not
+        """
+        a_user = ""
+        for user in User.user_list:
+            if(user.username == username and user.password == password):
+                    a_user == user.username
+        return a_user
 
     def __init__(self, account, user_name, user_password):
         '''
@@ -70,6 +88,7 @@ class Credentials():
         for credential in cls.credentials_list:
             if credential.account == name:
                 return True
+        return False
 
     def generatePassword(stringLength=8):
         """

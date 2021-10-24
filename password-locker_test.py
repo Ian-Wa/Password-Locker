@@ -1,7 +1,6 @@
 import unittest   #  Importing the unittest module
 from password import User, Credentials  #  Importing the user and credentials classes
 
-
 class TestUser(unittest.TestCase):
     '''
     Test class that defines test cases for the user class behaviours.
