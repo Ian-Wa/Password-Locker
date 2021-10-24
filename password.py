@@ -51,3 +51,12 @@ class Credentials():
         '''
         return cls.credentials_list
 
+    @classmethod
+    def find_credentials(cls,name):
+        '''
+        Method to find a credentials object by name.
+        '''
+        for credential in cls.credentials_list:
+            if credential.account == name:
+                return credential
+
