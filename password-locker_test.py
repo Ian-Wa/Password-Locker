@@ -1,5 +1,5 @@
 import unittest   #  Importing the unittest module
-from password import User  #  Importing the contact class
+from password import User, Credentials  #  Importing the user and credentials classes
 
 class TestUser(unittest.TestCase):
     '''
@@ -34,6 +34,16 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user.save_user()  #  Saving the new user
         self.assertEqual(len(User.user_list), 1)
+
+class TestCredentials(unittest.TestCase):
+    '''
+    test case that defines test cases for credentials class.
+    '''
+    def setUp(self) -> None:
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_credential = Credentials('Gmail', 'Ian', '12345')
 
 
 if __name__ == '__main__':
