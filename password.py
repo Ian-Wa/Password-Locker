@@ -44,3 +44,10 @@ class Credentials():
         '''
         Credentials.credentials_list.remove(self)
 
+    @classmethod
+    def display_credentials(cls):
+        '''
+        Method that returns a credentials_list.
+        '''
+        return cls.credentials_list
+
