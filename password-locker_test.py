@@ -1,6 +1,7 @@
 import unittest   #  Importing the unittest module
 from password import User, Credentials  #  Importing the user and credentials classes
 
+
 class TestUser(unittest.TestCase):
     '''
     Test class that defines test cases for the user class behaviours.
@@ -116,6 +117,8 @@ class TestCredentials(unittest.TestCase):
 
         credentials_exists = Credentials.credentials_exists('user1')
         self.assertTrue(credentials_exists)
+
+ 
 
 
 if __name__ == '__main__':
