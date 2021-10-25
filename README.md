@@ -20,3 +20,8 @@ The user would like to .....
 * python 3.6
 * pip
 
+#### Cloning
+* Open your Terminal {Ctrl+Alt+T}
+* git clone ```https://github.com/Ian-Wa/Password-Locker.git```
+* cd Password-Locker
+* code . or atom . based on the text editor you have.
