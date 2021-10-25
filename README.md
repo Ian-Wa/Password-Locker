@@ -15,3 +15,8 @@ The user would like to .....
 * Generate new passwords for new accounts that have not yet been registered with the application.
 * Delete stored accounts together with all their credentials and details.
 
+## Installation/ Setup Instructions
+### The Application requires the following pre-requisites inorder to run successfully:
+* python 3.6
+* pip
+
