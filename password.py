@@ -1,5 +1,6 @@
 import string
 import random
+
 class User:
     '''
     Class that generates a new user instance
@@ -89,6 +90,8 @@ class Credentials():
             if credential.account == name:
                 return True
         return False
+
+
 
     def generatePassword(stringLength=8):
         """
